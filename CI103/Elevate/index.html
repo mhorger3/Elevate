@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+
+  <script language="javascript" type="text/javascript" src="js/sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="js/search.js"></script>
+
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxMZVQYGwcfP7vuvBfPmTvTmxpKF86dcY"></script>
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+
+<body>
+
+  <div id="ui">
+
+	  <h2>Find Hills</h2>
+	  <br />
+	  <form method="get" id="chooseAddress">
+	  	<button type="submit" id="currentlocation">Use current location</button>
+	  	<button type="button" id="searchAddress" class="learnButton">Search by Address</button>
+	  	<div class="clear"></div>
+	  	<div class="addressSearch">
+	  		<input id="textAddress" type="text" name="address" placeholder="enter your address" autofocus>
+	  		<button type="submit" class="learnButton" id="submit">Search</button>
+	  	</div>
+	  	<div class="clear"></div>
+	  </form>
+
+  </div>
+
+  <div id="google-map"></div>
+
+</body>
+</html>
